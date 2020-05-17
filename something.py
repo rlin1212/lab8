@@ -59,14 +59,49 @@ def playerinmars(): #plot in space
     print("Your captain orders you to get your guns and equip yourself for battle.")
     time.sleep(1)
     mars_answer = input("How do you respond (Yes/No):") #If statement player makes a choice here
-        if mars_answer == "No":
-            print("No! This is wrong, we just got here and it would be unjust for us to terrorize them.")
-        elif mars_answer == "Yes"
-            print("Yes captain, we are ready for battle.")
+
+    if mars_answer == "No":
+        time.sleep(1)
+        print("No! This is wrong, we just got here and it would be unjust for us to terrorize them.")
+        time.sleep(1)
+        print("The Captain turns to you.. How DARE YOU disobey my orders and threaten our goal of saving humanity!")
+        time.sleep(1)
+        revoltanswer = input("Start a revolt against the captain? (Yes/No):)
+        if revoltanswer = "Yes":
+            time.sleep(1)
+            print("You tell the captain and the crew members,'Those who think its wrong to kill these aliens, take my side!'")
+            time.sleep(1)
+            print("Your crew sides with you and tie up the captain.")
+            time.sleep(1)
+            print("Your captain screams, 'HOW DARE YOU ALL JEOPARDIZE THE LIVES OF EVERYONE ON EARTH FOR MEASLY ALIEN LIVES!!")
+            print("YOU CAN NEVER KILL MY DREAM TO LIVE ON MARS'")
+            time.sleep(3)
+            print('The captain breaks free and aims a gun at you.')
+            time.sleep(2)
+            gunresponse = input("How do you react? (Fight/Insult him):"
+                if gunresponse == "Fight":
+                elif gunresponse == "Insult him":
+                    time.sleep(1)
+                    print("You wouldn't dare shoot, you don't have the guts to.")
+                    time.sleep(2)
+                    print("The captain screams, 'AARGH, I WILL NOT LET A SUBORDINATE JEOPORDIZE THE MISSION")
+                    time.sleep(2)
+                    print("He fires the gun, and it hits you in the heart.")
+                    time.sleep(2)
+        elif revoltanswer = "No":
+            time.sleep(1)
+            print("I will not revolt against you as a leader, but I also refuse to help the slaughter of these aliens!")
+    elif mars_answer == "Yes":
+        time.sleep(1)
+        print("Yes captain, we are ready for battle.")
+
+def playerwakesup():
+    print(".........")
+
 playerintro()
 playerintro_pt2()
 playerinmars()
-
+playerwakesup()
 
 playagain = "Yes"
 while playagain == "yes": #giving the player an option to continue playing
