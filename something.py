@@ -49,6 +49,28 @@ def playerintro_pt2(): #assinging a mission the player
     print("1.")
     time.sleep(0.5)
     print('takeoff.')
-
+    time.sleep(5)
+def playerinmars(): #plot in space
+    print("In space, you see the prettiest, most surreal views that are nearly unimaginable")
+    print(" having lived your entire life on Earth.")
+    time.sleep(4)
+    print("You explore planets and end up on Mars to find that there are alien life forms living there")
+    time.sleep(4)
+    print("Your captain orders you to get your guns and equip yourself for battle.")
+    time.sleep(1)
+    mars_answer = input("How do you respond (Yes/No):") #If statement player makes a choice here
+        if mars_answer == "No":
+            print("No! This is wrong, we just got here and it would be unjust for us to terrorize them.")
+        elif mars_answer == "Yes"
+            print("Yes captain, we are ready for battle.")
 playerintro()
 playerintro_pt2()
+playerinmars()
+
+
+playagain = "Yes"
+while playagain == "yes": #giving the player an option to continue playing
+    playerintro()
+    playerintro_pt2()
+    playerinmars() 
+    playagain = input("Do you want to play again (Yes/No):")
