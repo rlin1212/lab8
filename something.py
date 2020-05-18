@@ -1,11 +1,12 @@
 import random
 import time
 
+playername = input("Please enter a playername:") #asking for player name
+
 def playerintro(): #introduction to the game, setting the scene
-    playername = input("Please enter a playername:") #asking for player name
-    print('Welcome '+playername)
-    time.sleep(1)
-    print('It is the year 2050.')
+    print('Welcome '+playername) #uses playername that was inputted
+    time.sleep(1) #sets time in between when statements are printed
+    print('It is the year 2050.')#Print statements that set scene
     time.sleep(1)
     print('Ever since year 2020, our country has been ravaged by plagues and viruses, destroying much of the population.')
     time.sleep(4)
@@ -18,12 +19,12 @@ def playerintro(): #introduction to the game, setting the scene
     print('.')
     time.sleep(1)
     
-def playerintro_pt2(): #assinging a mission the player
-    print("We survived the nuclear fallout and the desolate wasteland.")
+def playerintro_pt2(): #Print statements that set the scene
+    print("We survived the nuclear fallout and the desolate wasteland.") 
     time.sleep(4)
     print('Humanity bounced back, as it always does.')
     time.sleep(4)
-    print('But the food reserves are dwindeling and necessities are becoming scarce.')
+    print('But the food reserves are dwindling and necessities are becoming scarce.')
     time.sleep(4)
     print('You, are part of a select NASA crew to search space for a habitable world that humanity could thrive in.')
     time. sleep(4)
@@ -50,62 +51,153 @@ def playerintro_pt2(): #assinging a mission the player
     time.sleep(0.5)
     print('takeoff.')
     time.sleep(5)
-def playerinmars(): #plot in space
+def playerinmars(): #plot in space, more print statements
     print("In space, you see the prettiest, most surreal views that are nearly unimaginable")
     print(" having lived your entire life on Earth.")
+    time.sleep(5)
+    print("You explore planets and end up on Mars to find that there are millions of alien life forms living there!")
+    time.sleep(5)
+    print("The ship passes over several small towns of diverse alien creatures.")
+    print("You see bustling markets, schools, and more...")
+    time.sleep(6)
+    print("Your captain orders you to get your guns and equip yourself for battle in case you need to kill the aliens.")
+    time.sleep(5)
+    print("The ship lands...")
+    time.sleep(3)
+    print("You get off the ship and land in an alien town")
+    time.sleep(2)
+    print("After scouting of the area, the captain decides that Mars is habitable for humans!")
     time.sleep(4)
-    print("You explore planets and end up on Mars to find that there are alien life forms living there")
+    print("You and your crewmates exlaim 'Hooray!'")
+    time.sleep(3)
+    print("The captain says, 'I don't see a way for humans to live with aliens in coexistence...")
     time.sleep(4)
-    print("Your captain orders you to get your guns and equip yourself for battle.")
-    time.sleep(1)
-    mars_answer = input("How do you respond (Yes/No):") #If statement player makes a choice here
+    print("Our cultures, values, worlds are incomprable..")
+    print("We must eliminate them, so that humanity can prosper.")
+    time.sleep(6)
+    mars_answer = input("How do you respond (Yes/No):") #asking for input from player, about this question
 
-    if mars_answer == "No":
+    if mars_answer == "No": #original if statement
         time.sleep(1)
         print("No! This is wrong, we just got here and it would be unjust for us to terrorize them.")
-        time.sleep(1)
+        time.sleep(4)
         print("The Captain turns to you.. How DARE YOU disobey my orders and threaten our goal of saving humanity!")
-        time.sleep(1)
-        revoltanswer = input("Start a revolt against the captain? (Yes/No):)
-        if revoltanswer = "Yes":
-            time.sleep(1)
+        time.sleep(4)
+        revoltanswer = input("Start a revolt against the captain? (Yes/No):")
+        if revoltanswer == "Yes": #second if statement (if statement within if statement)
+            time.sleep(4)
             print("You tell the captain and the crew members,'Those who think its wrong to kill these aliens, take my side!'")
-            time.sleep(1)
+            time.sleep(4)
             print("Your crew sides with you and tie up the captain.")
-            time.sleep(1)
+            time.sleep(4)
             print("Your captain screams, 'HOW DARE YOU ALL JEOPARDIZE THE LIVES OF EVERYONE ON EARTH FOR MEASLY ALIEN LIVES!!")
             print("YOU CAN NEVER KILL MY DREAM TO LIVE ON MARS'")
-            time.sleep(3)
+            time.sleep(5)
             print('The captain breaks free and aims a gun at you.')
             time.sleep(2)
-            gunresponse = input("How do you react? (Fight/Insult him):"
-                if gunresponse == "Fight":
-                elif gunresponse == "Insult him":
-                    time.sleep(1)
-                    print("You wouldn't dare shoot, you don't have the guts to.")
-                    time.sleep(2)
-                    print("The captain screams, 'AARGH, I WILL NOT LET A SUBORDINATE JEOPORDIZE THE MISSION")
-                    time.sleep(2)
-                    print("He fires the gun, and it hits you in the heart.")
-                    time.sleep(2)
-        elif revoltanswer = "No":
-            time.sleep(1)
+            gunresponse = input("How do you react? (Fight/Insult him):")
+            if gunresponse == "Fight":#again, third if statement
+                print("You lunge at him, trying to go for the gun and he steps back.")
+                time.sleep(3)
+                print("The gun fires, and the bullet hits you in the heart.")
+                time.sleep(4)
+                print("As you feel your life fading away, eyes closing, you see your crew members scream")
+                print("the captain reels in horror, ' I swear it was an accident.. I didn't... ")
+                time.sleep(6)
+                print("'I didnt mean to..'")
+                time.sleep(6)
+
+            elif gunresponse == "Insult him": #part of third if statement
+                print("You wouldn't dare shoot, you don't have the guts to.")
+                time.sleep(4)
+                print("The captain screams, 'AARGH, I WILL NOT LET A SUBORDINATE JEOPORDIZE THE MISSION")
+                time.sleep(4)
+                print("He fires the gun, and it hits you in the heart.")
+                time.sleep(6)
+        elif revoltanswer == "No": # part of second if statement
+            time.sleep(4)
             print("I will not revolt against you as a leader, but I also refuse to help the slaughter of these aliens!")
-    elif mars_answer == "Yes":
+            time.sleep(4)
+            print("The captain smiles sinister, 'YOU DARE INSULT ME! Hahaha, well good luck in the frozen wasteland that is space.'")
+            time.sleep(4)
+            print("You look up confused, what do you mean?")
+            time.sleep(4)
+            print("The captain says, 'lock him up in the escape pod, he is on his own now.'")
+            time.sleep(4)
+            print("Your once friendly crew members lock you up in an escape pod, and send you into space")
+            print("on your own...")
+            time.sleep(6)
+            print("As you look back at the ship, you cry... ")
+            time.sleep(4)
+            print("You feel a mix of anger, hopelessness, sadness as the ship you came from takes off and disappears")
+            print("Leaving you forever lost in space...")
+            time.sleep(8)
+            print('.')
+            time.sleep (.5)
+            print('.')
+            time.sleep (.5)
+            print("Days pass, and you look out the window to only see the wide expanse of stars and empty space.")
+            time.sleep(3)
+            print('.')
+            time.sleep (.5)
+            print('.')
+            time.sleep (.5)
+            print("You are lost in the darkness...")
+            time.sleep(6)
+    elif mars_answer == "Yes": #original if statement
         time.sleep(1)
         print("Yes captain, we are ready for battle.")
+        time.sleep(3)
+        print("You and your comrades enter battle and try to defeat the martians.")
+        time.sleep(3)
+        print("The martians are too strong, who expected they would have advanced warfare technology!")
+        time.sleep(4)
+        print("Frantically, you and your fellow crew members retreat, suffering bad casualities.")
+        time.sleep(4)
+        print("As you return to the ship, you see the engines activate.")
+        time.sleep(4)
+        print("You see the captain starting the ship, attempting to leave you and your friends.")
+        time.sleep(4)
+        print("You hear a humongous explosion as in front of your eyes, the ship along with your captain")
+        print("are blown to bits by a martian missle.")
+        time.sleep(6)
+        print("You are thrown by the huge blast and the last thing you see as you pass out")
+        print("are your alien the aliens clasping chains around your arms as they take you prisoner.")
+        time.sleep(8)
 
-def playerwakesup():
-    print(".........")
-
+def playerwakesup(): #defining function for the final part
+    print("ZZZ")
+    time.sleep(3.5)
+    print("ZZZ")
+    time.sleep(2)
+    print("ZZZ")
+    time.sleep(4)
+    print("You JOLT AWAKE to the sound of a PHONE RINGING")
+    time.sleep(2)
+    print("Half asleep and completely confused you put on your glasses and look at the screen...")
+    time.sleep(4)
+    print("'UKNOWN CALLER ID' it reads...")
+    time.sleep(2)
+    print("ZZZ")
+    mysteriouscall = input("Do you want to pick up the phone? (Yes/No):")
+    if mysteriouscall == "Yes":#creating if statement for end of game
+        time.sleep(1)
+        print("You ask, 'who is this?'")
+        time.sleep(2)
+        print("Mrs. Jeantete, says, hi "+playername+ "did you oversleep? How come Ms. Deranek marked you absent for D block?")
+        time.sleep(5)
+        print("GAME OVER")
+        return
+    elif mysteriouscall == "No": #if no is chosen then the game restarts
+        time.sleep(1)
+        print("You deny the call, close your eyes...")
+        time.sleep(1)
+        print("You feel a gentle warmness and fall back to sleep....")          
+        playerintro_pt2()        #each function called again, so game restarts
+        playerinmars()
+        playerwakesup()          # In the next loop, the player has the option to restart again
+        
 playerintro()
 playerintro_pt2()
 playerinmars()
 playerwakesup()
-
-playagain = "Yes"
-while playagain == "yes": #giving the player an option to continue playing
-    playerintro()
-    playerintro_pt2()
-    playerinmars() 
-    playagain = input("Do you want to play again (Yes/No):")
