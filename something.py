@@ -2,11 +2,12 @@ import random
 import time
 
 playername = input("Please enter a playername:") #asking for player name
-
+x = random.randint(1,6) #random number btwn 1 and 6
+x = str(x) #making it a string
 def playerintro(): #introduction to the game, setting the scene
     print('Welcome '+playername) #uses playername that was inputted
     time.sleep(1) #sets time in between when statements are printed
-    print('It is the year 2050.')#Print statements that set scene
+    print('It is the year 205'+x)#Print statements that set scene
     time.sleep(1)
     print('Ever since year 2020, our country has been ravaged by plagues and viruses, destroying much of the population.')
     time.sleep(4)
@@ -191,8 +192,10 @@ def playerwakesup(): #defining function for the final part
     elif mysteriouscall == "No": #if no is chosen then the game restarts
         time.sleep(1)
         print("You deny the call, close your eyes...")
-        time.sleep(1)
-        print("You feel a gentle warmness and fall back to sleep....")          
+        time.sleep(3)
+        print("You feel a gentle warmness and fall back to sleep....") 
+        time.sleep(2)
+        print("The next time you open your eyes back inside the dream...")         
         playerintro_pt2()        #each function called again, so game restarts
         playerinmars()
         playerwakesup()          # In the next loop, the player has the option to restart again
